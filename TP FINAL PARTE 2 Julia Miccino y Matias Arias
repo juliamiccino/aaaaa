@@ -1,0 +1,95 @@
+TP FINAL PARTE 2
+
+Integrantes: Julia Miccino y Matias Arias
+
+Nombre del cuento: Marionetas S.A
+
+Nombre asignado al juego: El doble malvado
+
+Contexto: Cuando la marioneta de Smith se revela y da señales de que quiere la vida de su dueño.
+
+Descripción del juego: Smith debe huir de su doble mientras se enfrenta a obstáculos recibe disparos del doble. Tiene que lograr salir de su casa para poder llamar a la empresa. 
+
+Ej.  El personaje recorre un laberinto comiendo todos los puntos mientras evita a varios fantasmas que lo persiguen.
+
+Condiciones para ganar/perder: 
+Condiciones para perder:
+. Que el jugador pierda las tres vidas
+. Que el doble consiga alcanzar al jugador. 
+Condiciones para ganar:
+. Que se acabe el tiempo.
+. (Alternativo) Lograr salir de la casa.
+
+Tipo de vista: Lateral.
+
+Interacción: 
+Controles para operar: Flechas del teclado (flecha izquierda, flecha derecha, flecha arriba, flecha abajo)
+
+Clases a utilizar:
+
+
+class juego { /* caja del juego */
+    constructor() {
+        this.jugador = new jugador(x, y, img);
+        this.doble = new dobleMalvado(x, y, img);
+        this.disparo = new disparo[];
+        this.estado = "estado de juego" /*"jugando" "gano" "perdio"*/
+    }
+    actualizar() { }
+    colisiones() { }
+    verificarCondiciones() { } /* reglas */
+}
+
+
+/* fichas del juego */
+class jugador {
+    constructor(x, y, img) {
+        this.x = x;
+        this.y = y;
+        this.velocidad = 3;
+        this.vidas = 3;
+        this.ancho = 30;
+        this.alto = 80;
+    }
+    dibujar() { }
+    mover() { }
+    recibirDisparo() { }
+    vive() { }
+    serAtrapado() { }
+}
+
+
+class dobleMalvado {
+    constructor(x, y, img) {
+        this.x = x;
+        this.y = y;
+        this.img = img;
+        this.velocidad = 2.8;
+        this.ancho = 30;
+        this.alto = 80;
+    }
+
+
+    dibujar() { }
+    moverse() { }
+    disparar() { }
+}
+
+
+class disparo {
+    constructor(x, y, img) {
+        this.x = x;
+        this.y = y;
+        this.img = img;
+        this.velocidad = 2.8;
+        this.tam = 10;
+        this.direccion = direccion;
+        this.activo = true;
+    }
+
+
+    dibujar() { }
+    colisionaConJugador() { }
+    disparar() { }
+    fueraDePantalla() {}
+}
