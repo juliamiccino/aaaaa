@@ -17,8 +17,8 @@ Condiciones para perder:
 . Que el jugador pierda las tres vidas
 . Que el doble consiga alcanzar al jugador. 
 Condiciones para ganar:
-. Que se acabe el tiempo.
-. (Alternativo) Lograr salir de la casa.
+. Lograr salir de la casa.
+. (Alternativo) Que se acabe el tiempo.
 
 Tipo de vista: Lateral.
 
@@ -26,7 +26,6 @@ Interacción:
 Controles para operar: Flechas del teclado (flecha izquierda, flecha derecha, flecha arriba, flecha abajo)
 
 Clases a utilizar:
-
 
 class juego { /* caja del juego */
     constructor() {
