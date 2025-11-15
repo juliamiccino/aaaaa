@@ -19,8 +19,8 @@ class Jugador {
 
   dibujar() {
     image(imgPJ1, this.posX, this.posY, this.ancho, this.alto);
-    fill(100, 0, 0, 100)
-    rect(this.hitX, this.hitY, this.hitAncho, this.hitAlto);
+    //fill(100, 0, 0, 100)
+    //rect(this.hitX, this.hitY, this.hitAncho, this.hitAlto);
     this.hitX = this.posX + 20;
     this.hitY = this.posY + 20;
 
@@ -39,11 +39,10 @@ class Jugador {
       this.vidas.pop();
     }
   }
-
+ 
   estaMuerto() {
-    return this.vidas.length === 0;
+   return this.vidas.length === 0;
   }
-
   saltar() {
     if (keyIsDown(UP_ARROW) && this.estaSaltando == false) {
       this.estaSaltando = true;

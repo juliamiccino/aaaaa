@@ -17,6 +17,6 @@ function draw() {
   caja.dibujar();
 }
 
-/*function keyPressed(){
-caja.teclaPresionada(keyCode)
-}*/
+function mousePressed() {
+  caja.pantallas();
+}

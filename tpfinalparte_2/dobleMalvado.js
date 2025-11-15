@@ -6,7 +6,7 @@ class Doblemalvado {
  this.ancho = 110;
  this.alto = 165;
  this.posXOriginal = 100;
- this.dobleAvanza = false
+ this.dobleAvanza = false;
  this.bala = new Bala(this.x + 78, this.y + 46);
  }
  

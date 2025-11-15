@@ -1,10 +1,12 @@
 class Final {
   constructor() {
-    this.reiniciar = new Boton(193);
+    this.reiniciar = new Boton(200);
+    this.botonCreditos = new Boton(270);
   }
   dibujar() {
     this.estetica();
     this.reiniciar.boton(3);
+    this.botonCreditos.boton(2);
   }
   botonIniciar() {
   }

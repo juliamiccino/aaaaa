@@ -1,14 +1,26 @@
 class Estructuras {
-  constructor() {
-    this.x = 504.5;
-    this.y = 277.5;
-    this.tamX = 67.5;
-    this.tamY = 60;
+  constructor(x) {
+    this.x = x;
+    this.y = 260;
+
+    this.Tam = 40;
+
+    this.velocidad = 2;
+    this.activa = true;
   }
 
-  dibujar(){
-  rect(this.x, this.y, this.tamX, this.tamY);
+  actualizar() {
+    this.x -= this.velocidad;
+    if (this.x < -50) {
+      this.activa = false;
+    }
   }
+
+  dibujar() {
+    this.actualizar();
+    rect(this.x, this.y, this.Tam, this.Tam);
+  }
+
   obstruir() {
   }
   fueraDePantalla() {

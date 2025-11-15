@@ -2,9 +2,9 @@ class Bala {
   constructor(x, y) {
     this.x = x;
     this.y = y;
-    this.velocidad = 4;
+    this.velocidad = 2;
     this.tam = 7;
-    this.bajadaBala = 1;
+    this.bajadaBala = 0.50;
     this.colorBala = color(255, 100, 100);
     this.activa = true;
   }
@@ -24,4 +24,5 @@ class Bala {
       circle(this.x, this.y, this.tam);
     }
   }
+  
 }

@@ -1,15 +1,12 @@
-class Inicio {
+class Instrucciones {
   constructor() {
-    this.botonInicio = new Boton(200);
-    this.botonInstrucciones = new Boton(270);
-    this.botonCreditos = new Boton (340);
+    this.botonInicio = new Boton(300);
   }
   dibujar() {
     this.estetica();
-    this.botonInicio.boton(0);
-    this.botonInstrucciones.boton(1);
-    this.botonCreditos.boton(2);
+    this.botonInicio.boton(2);
   }
+
   estetica() {
     fill(131, 160, 220);
     rect(width/2, height/2, 640, 480); //puedo cambiar por un background o imagen
