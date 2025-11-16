@@ -1,3 +1,4 @@
+// Comisión 1 Matías Arias y Julia Miccino
 let caja;
 
 function preload(){
@@ -21,3 +22,4 @@ function draw() {
 function mousePressed(){
 caja.pantallas();
 }
+
