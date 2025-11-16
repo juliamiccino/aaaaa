@@ -93,7 +93,6 @@ class Juego {
         this.musicaIniciada = true;
       }
 
-      // ... resto de código del juego
     } else {
       if (this.musicaIniciada) {
         musica.stop(); // detiene la música si salís del estado 1
@@ -216,3 +215,4 @@ class Juego {
     }
   }
 }
+
